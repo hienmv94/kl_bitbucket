@@ -1,0 +1,4 @@
+<% @bitbucket.repos.list do |repo| %>
+<% binding.pry %>
+  <li><%= repo.name %>----<%= repo.owner.name %></li>
+<% end%>
