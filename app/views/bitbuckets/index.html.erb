@@ -1,0 +1,13 @@
+<h2>List repos of UET-OOP</h2>
+<table>
+<tr>
+  <th>Repo</th>
+  <th>Owner</th>
+</tr>
+<% @bitbucket.repos.list do |repo| %>
+<tr>
+  <td><%= repo.name %></td>
+  <td><%= repo.owner %></td>
+<% end%>
+</tr>
+</table>
