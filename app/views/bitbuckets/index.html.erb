@@ -3,11 +3,16 @@
 <tr>
   <th>Repo</th>
   <th>Owner</th>
+  <th>Lastupdate</th>
 </tr>
-<% @bitbucket.repos.list do |repo| %>
+<% @repos.list do |repo| %>
 <tr>
   <td><%= repo.name %></td>
+
   <td><%= repo.owner %></td>
+  <td><%= repo.utc_last_updated %></td>
 <% end%>
 </tr>
 </table>
+
+ <td><%= @repos.get("13020365", "oop-asg01"	)%></td>
