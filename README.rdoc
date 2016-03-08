@@ -1,2 +1,4 @@
 == KHOA LUAN
 Example bitbucket
+
+LOGIN WITH GOOGLE only
